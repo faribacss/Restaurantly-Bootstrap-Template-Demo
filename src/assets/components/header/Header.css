@@ -1,0 +1,157 @@
+/* ساختار کلی */
+.header-container {
+  background-color: rgba(0, 0, 0, 0.473);
+  background-image: url("../../../assets/images/header-pic.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  height: 100vh;
+}
+/* header contact and language */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.left-header,
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.left-header i,
+.right-header i {
+  color: #7a631c;
+}
+
+.right-header p:nth-child(1) {
+  color: #7a631c;
+  font-weight: 600;
+}
+.right-header p:nth-child(3) {
+  color: white;
+  font-weight: 600;
+}
+
+/* Header Body */
+.body-text {
+  padding: 120px;
+  margin-top: 100px;
+}
+
+.body-text-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.welcome-text {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Playfair Display";
+  color: #fff;
+  text-shadow: 0 0 8px #0c0c0c;
+}
+.welcome-text span {
+  color: #d2aa58;
+}
+.info {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.wel-btn {
+  all: unset;
+  margin: 3px 5px;
+  padding: 10px 40px;
+  color: #fff;
+  border: 1px solid #d2aa58;
+  font-family: "Open Sans";
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.wel-btn:hover {
+  background-color: #d2a958a2;
+}
+
+.body-text-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+.play {
+  text-align: center;
+  background-color: #d2aa58;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 15px #d2a958);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.play i {
+  font-size: 50px;
+  color: #fff;
+}
+.play:hover {
+  transform: scale(1.1);
+}
+
+/* -------------------
+   📱 حالت ریسپانسیو
+-------------------- */
+@media screen and (max-width: 1200px) {
+  .welcome-text {
+    font-size: 50px;
+  }
+  .info {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .body-text {
+    text-align: center;
+  }
+  .body-text-row {
+    flex-direction: column;
+  }
+  .welcome-text {
+    font-size: 40px;
+  }
+  .info {
+    font-size: 20px;
+  }
+  .wel-btn {
+    padding: 10px 30px;
+  }
+  .play {
+    margin-top: 40px;
+  }
+}

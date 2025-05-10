@@ -1,0 +1,90 @@
+/* navbar */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 60px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.473);
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.nav-body {
+  background-color: rgba(0, 0, 0, 0.774);
+}
+.nav-bar.scrolled {
+  background-color: #0c0b09; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(0); 
+  animation: fadeInDown 0.5s ease forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 0;
+  }
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  gap: 20px;
+}
+
+.resturant-name {
+  font-size: 40px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  color: rgb(184, 183, 183);
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: rgb(184, 183, 183);
+  font-size: 15px;
+}
+
+.menu-list a:hover {
+  color: #7a631c;
+}
+
+.open-list {
+  font-size: 20px;
+  background: #ffffff;
+  outline: none;
+  border: none;
+}
+
+/* -------------------
+   📱 حالت ریسپانسیو
+-------------------- */
+@media screen and (max-width: 992px) {
+  .resturant-name {
+    font-size: 30px;
+  }
+
+  .menu-list {
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .left-header, .right-header {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .open-list {
+    font-size: 20px;
+    margin-left: auto;
+  }
+}

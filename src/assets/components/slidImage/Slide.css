@@ -1,0 +1,92 @@
+.slide-section {
+  background-color: rgba(0, 0, 0, 0.733);
+  background-image: url("../../../assets/images/events-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-container {
+  padding: 30px;
+}
+
+.slide-carousel {
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.slide-desc{
+    font-family: 'Playfair Display', serif;
+}
+.slide-desc h3{
+    color: rgb(224, 222, 222);
+}
+
+.slide-desc small{
+    color: rgb(224, 222, 222);
+    font-size: 1.5rem;
+}
+
+.slide-desc-p-1{
+    color: rgb(224, 222, 222);
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.slide-desc-p-2{
+    color: white;
+}
+
+.slide-list{
+    list-style: none;
+}
+
+.slide-list li{
+    color: white;
+    padding: 0 10px;
+}
+
+.slide-list li i{
+    color: #db864d;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.small-border::after{
+    content: "";
+    display: block;
+    width: 10%;
+    height: 1px;
+    background-color: #db864d;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-desc h3{
+        font-size: 15px;
+    }
+    .slide-desc small{
+        font-size: 1rem;
+    }
+    .slide-desc-p-1{
+        font-size: 12px;
+    }
+    .slide-desc-p-2{
+        font-size: 12px;
+    }
+    .slide-list li{
+        font-size: 12px;
+    }
+    .slide-list li i{
+        font-size: 15px;
+    }
+    
+    
+}

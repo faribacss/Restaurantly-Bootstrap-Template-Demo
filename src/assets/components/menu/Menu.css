@@ -1,0 +1,120 @@
+.menu-section {
+  background-color: #191815;
+  padding: 50px 200px;
+}
+
+.menu-section-header {
+  padding: 30px 10px;
+}
+.menu-section-small {
+  color: #646463;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+}
+.menu-section-small::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #d3ab58;
+  margin-left: 10px;
+}
+.menu-section-header h1 {
+  color: #d2aa58;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Playfair Display";
+}
+@media screen and (max-width: 992px) {
+  .menu-section {
+    padding: 50px 100px;
+  }
+  .menu-section-header {
+    text-align: center;
+  }
+  .menu-section-small {
+    justify-content: center;
+  }
+  .menu-section-header h1 {
+    font-size: 30px;
+  }
+}
+.menu-container {
+  border: none;
+  text-align: center;
+  margin: 50px auto;
+}
+.menu-tabs {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-tab-item {
+  all: unset;
+  border: none;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 20px;
+  font-family: "Open Sans";
+  cursor: pointer;
+}
+
+.menu-tab-item {
+  color: #fff;
+}
+.menu-tab-item:hover {
+  color: #d2aa58;
+}
+.menu-tab-item:active {
+  color: #d2aa58;
+}
+.menu-tab-item:focus {
+  color: #d2aa58;
+}
+
+.menu-items {
+  margin-top: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
+}
+.img-food {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 15px 20px;
+}
+.m-content {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.m-content p {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  background-color: #0c0a06;
+  color: #f1ba4c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.m-desc {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  color: #646463;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .menu-items {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+  }
+}

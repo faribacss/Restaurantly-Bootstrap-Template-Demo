@@ -1,0 +1,138 @@
+/* location section */
+.location-section {
+  padding: 120px 0;
+  background-color: #0c0b09f8;
+}
+.location-title {
+  font-size: 16px;
+  font-family: "Playfair Display", monospace;
+  color: rgb(255 255 255 / 70%);
+  line-break: loose;
+  display: flex;
+  align-items: center;
+}
+
+.location-title::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #d3ab58;
+  display: block;
+  margin-left: 10px;
+}
+
+.location-desc {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #d3ab58;
+  margin-bottom: 50px;
+}
+
+.location-map {
+  transition: all 0.3s ease-in-out;
+}
+
+/* location info */
+.location-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10px 150px;
+  width: 100%;
+}
+
+.loc-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  margin: 10px 0;
+}
+.locat-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.location-icon-1 {
+  align-items: center;
+  gap: 10px;
+}
+.location-icon-1 i {
+  font-size: 20px;
+  background-color: #d3ab58;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.location-icon-1 h3 {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #fff;
+}
+.location-icon-1 p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .location-icon-1 p {
+    font-size: 12px;
+  }
+}
+
+/* form */
+.form-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-info input {
+  width: 100%;
+  border: 1px solid #9b865bc7;
+  background-color: color-mix(in srgb, #0c0b09 50%, transparent 50%);
+  padding: 6px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-info textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #9b865bc7;
+  background-color: color-mix(in srgb, #0c0b09 50%, transparent 50%);
+  outline: none;
+}
+
+.form-info input::placeholder , .form-info textarea::placeholder {
+  color: #9b865bc7;
+}
+.submit-btn {
+  all: unset;
+  border: 1px solid #cda45e;
+  color: #999;
+  padding: 8px 25px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #cda45e;
+  color: #0c0b09;
+}
+
+

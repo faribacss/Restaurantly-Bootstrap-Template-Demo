@@ -1,0 +1,113 @@
+.body-section{
+   background-color: rgb(7, 4, 1);
+   padding: 50px 200px;
+}
+.body-section-header{
+    padding: 10px;
+}
+.body-section-small{
+    color: #646463;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+}
+.body-section-small::after{
+    content: '';
+    width: 150px;
+    height: 1px;
+    background-color: #d3ab58;
+    margin-left: 10px;
+}
+.body-section-header h1{
+    color: #d2aa58;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Playfair Display';
+}
+@media screen and (max-width: 992px) {
+    .body-section{
+        padding: 50px 100px;
+    }
+    .body-section-header{
+        text-align: center;
+    }
+    .body-section-small{
+        justify-content: center;
+    }
+    .body-section-header h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .body-section{
+        padding: 50px;
+    }
+    .body-section-header h1{
+        font-size: 25px;
+    }
+}
+
+.body-section-container{
+    padding: 15px;
+    margin-top: 50px;
+}
+.body-section-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+.body-section-item{
+    margin: 10px 0;
+}
+.item-body{
+    background-color: #151412;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.item-body:hover{
+    background-color: #d2aa58;
+    transform: scale(1.05);
+}
+.item-body:hover .title, .item-body:hover .number, .item-body:hover .description{
+    color: #151412;
+}
+
+.number{
+    color: #d2aa58;
+    font-size: 30px;
+    font-weight: 800;
+}
+.title{
+    color: #FFF;
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Playfair Display';
+}
+.description{
+    color: #5e5d5d;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+}
+
+@media screen and (max-width: 992px) {
+    .body-section-row{
+        gap: 20px;
+    }
+    .title{
+        font-size: 15px;
+    }
+    .description{
+        font-size: 14px;
+    }
+    
+}
